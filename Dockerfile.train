@@ -1,12 +1,11 @@
-FROM <base imagae>
-
+FROM python:3.9-slim
 # TODO: Set a working directory
-
+WORKDIR /app/models
 # TODO: Copy the requirements.txt file to the working directory
-
+COPY requirements.txt .
 # TODO: Install the Python dependencies
-
+RUN pip install --no-cache-dir -r requirements.txt
 # TODO: Copy the training script (train.py) to the working directory
-
+COPY train.py .
 # TODO: Run the training script that generates the model
-CMD [...]
+CMD ["python","train.py"]
