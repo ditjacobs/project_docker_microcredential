@@ -1,0 +1,30 @@
+INFO:    Starting build...
+Copying blob sha256:1fc11db7aa34c9fe32f84088ae0c7f53221739282c3059c9aa7326a210399ec9
+Copying blob sha256:c29f5b76f736a8b555fd191c48d6581bb918bcd605a7cbcc76205dd6acff3260
+Copying blob sha256:c2ba682189ed704d411633f3ae6d24f575c092778d3d7be5bf3ee377b3449d42
+Copying config sha256:ffc5b597096e423c7bfa046092cf7dc1d995059262b715b8cee92e69c99866d4
+Writing manifest to image destination
+2025/04/08 11:13:52  info unpack layer: sha256:c29f5b76f736a8b555fd191c48d6581bb918bcd605a7cbcc76205dd6acff3260
+2025/04/08 11:13:53  info unpack layer: sha256:c2ba682189ed704d411633f3ae6d24f575c092778d3d7be5bf3ee377b3449d42
+2025/04/08 11:13:54  info unpack layer: sha256:1fc11db7aa34c9fe32f84088ae0c7f53221739282c3059c9aa7326a210399ec9
+INFO:    Copying environment.yml to 
+INFO:    Running post scriptlet
++ /opt/conda/bin/conda env create -f environment.yml
+
+
+==> WARNING: A newer version of conda exists. <==
+    current version: 25.1.1
+    latest version: 25.3.1
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
++ echo . /opt/conda/etc/profile.d/conda.sh
++ + cut -fhead 2 -n -d 1   environment.yml
+
++ echo conda activate association_testing
+INFO:    Adding environment to container
+INFO:    Creating SIF file...
+INFO:    Build complete: /tmp/vsc21048/association_testing.sif

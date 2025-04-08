@@ -1,0 +1,13 @@
+INFO:    Starting build...
+Copying blob sha256:bccd10f490ab0f3fba61b193d1b80af91b17ca9bdca9768a16ed05ce16552fcb
+Copying blob sha256:85726a5528cdb1b655d1109298023baa24910bf1016cc5cf4cb4aaf9e173ea66
+Copying blob sha256:508b6fba2a0106039ffe10d902f724fa19e2aa5b6e2c4318d3047bf4c213d223
+Copying blob sha256:def236530e7ad9a0c7d4e5054797dd0eefcfe802871593dd301abad71ae54e22
+Copying config sha256:c94ad914cd428737ccd6df6681fa64a7c9a50f73c91c7a78514d34c161123e00
+Writing manifest to image destination
+2025/04/08 09:45:01  info unpack layer: sha256:bccd10f490ab0f3fba61b193d1b80af91b17ca9bdca9768a16ed05ce16552fcb
+2025/04/08 09:45:02  info unpack layer: sha256:508b6fba2a0106039ffe10d902f724fa19e2aa5b6e2c4318d3047bf4c213d223
+2025/04/08 09:45:05  info unpack layer: sha256:def236530e7ad9a0c7d4e5054797dd0eefcfe802871593dd301abad71ae54e22
+2025/04/08 09:45:05  info unpack layer: sha256:85726a5528cdb1b655d1109298023baa24910bf1016cc5cf4cb4aaf9e173ea66
+INFO:    Creating SIF file...
+INFO:    Build complete: /tmp/vsc21048/samtools-1.20.sif
