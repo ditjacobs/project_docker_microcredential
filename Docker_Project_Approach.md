@@ -70,4 +70,23 @@ I pushed the image for the python_server as well.
 `docker push ditjacobs/project_docker_microcredential:python_servev1.0`   
 
 ## Apptainer ## 
+Build an Apptainer image on the HPC of your choice.   
+I build both a pre-build image and create my own apptainer recipe.   
 
+1. Pre-build image
+To build a container from an image from Dockerhub, I searched for samtools and copied the correct path into the shell script.  
+After setting to the correct directory, I build the image with the following command.  
+`apptainer build --fakeroot /tmp/$USER/samtools-1.20.sif docker://staphb/samtools:1.20`  
+And moved the image from the temporary folder to the correct folder in $VSC_SCRATCH.   
+
+2. Creating my own recipe
+I created a recipe that is based on the miniconda3 image. 
+
+The def file for the recipe starts from continuumio/miniconda3.  
+It uses the environment.yml to install all dependencies in the conda environment.  
+The conda package `regenie` , which is used for association testing, is included in the environment.yml. 
+The installation instructions to create and activate a conda environment were copied from the example def file mutatex.def. 
+
+The shell script was adapted to contain the correct paths and files ('environment.yml' and 'association_testing.def') to build the apptainer image. 
+
+I copied the log files locally and created a folder `logs` where all of them can be found. 
